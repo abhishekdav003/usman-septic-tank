@@ -437,24 +437,21 @@ const ContactPage = () => {
             className={`bg-gradient-to-br from-amber-100 to-orange-100 rounded-3xl p-8 border border-amber-200 transition-all duration-700 ${
             isElementVisible('location-card') ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           }`} style={{ transitionDelay: '600ms' }}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+              <div className="flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Usman Septic Tanks</h3>
                 <div className="space-y-3 text-gray-700">
-                  <p className="flex items-center">
-                    <FaMapMarkerAlt className="text-amber-600 mr-3 text-xl" />
-                    <span className="font-semibold">Address:</span>
-                    <span className="ml-2">Roorkee Railway Station, Paniyala Road, Roorkee, Uttarakhand</span>
+                  <p className="flex items-start">
+                    <FaMapMarkerAlt className="text-amber-600 mr-3 text-xl mt-1 flex-shrink-0" />
+                    <span><span className="font-semibold">Address:</span> Roorkee Railway Station, Paniyala Road, Roorkee, Uttarakhand</span>
                   </p>
                   <p className="flex items-center">
-                    <FaPhone className="text-amber-600 mr-3 text-xl" />
-                    <span className="font-semibold">Phone:</span>
-                    <span className="ml-2">+91 90129 01312</span>
+                    <FaPhone className="text-amber-600 mr-3 text-xl flex-shrink-0" />
+                    <span><span className="font-semibold">Phone:</span> +91 90129 01312</span>
                   </p>
                   <p className="flex items-center">
-                    <FaClock className="text-amber-600 mr-3 text-xl" />
-                    <span className="font-semibold">Business Hours:</span>
-                    <span className="ml-2">Monday - Sunday: 8:00 AM - 8:00 PM</span>
+                    <FaClock className="text-amber-600 mr-3 text-xl flex-shrink-0" />
+                    <span><span className="font-semibold">Business Hours:</span> Monday - Sunday: 8:00 AM - 8:00 PM</span>
                   </p>
                 </div>
                 
@@ -462,31 +459,35 @@ const ContactPage = () => {
                   <h4 className="font-bold text-gray-900 mb-3">Why Visit Us?</h4>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-amber-500 rounded-full mr-3 flex-shrink-0"></div>
                       Free site consultation and measurement
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-amber-500 rounded-full mr-3 flex-shrink-0"></div>
                       See actual tank samples and quality
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-amber-500 rounded-full mr-3 flex-shrink-0"></div>
                       Get expert technical guidance
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-amber-500 rounded-full mr-3 flex-shrink-0"></div>
                       Discuss custom requirements
                     </li>
                   </ul>
                 </div>
               </div>
               
-              <div className="bg-gray-200 rounded-2xl h-64 lg:h-80 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <FaMapMarkerAlt className="text-3xl mx-auto mb-2" />
-                  <p>Map Location</p>
-                  <p className="text-sm">(Google Maps integration can be added here)</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg w-full h-full min-h-96">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3460.5693898178715!2d77.8620719755462!3d29.847848875023235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDUwJzUyLjMiTiA3N8KwNTEnNTIuNyJF!5e0!3m2!1sen!2sin!4v1761994151520!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0, minHeight: '384px' }} 
+                  allowFullScreen="" 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </div>
