@@ -76,7 +76,7 @@ const Gallery = () => {
   const imageFiles = productData.map((product, i) => ({
     id: `img-${i + 1}`,
     src: `/usman-septic-tank/images/${(i % 26) + 1}.jpg`,
-    title: `RCC Septic Tank ${product.width}x${product.depth}`,
+    title: `Project ${i + 1} - RCC Septic Tank ${product.width}x${product.depth}`,
     category: product.category,
     type: "image",
     size: `${product.width} x ${product.depth} ft`,
