@@ -8,9 +8,9 @@ const Gallery = () => {
   const [visibleElements, setVisibleElements] = useState({});
 
   // Configuration
-  const CONTACT_NUMBER = "+919876543210";
+  const CONTACT_NUMBER = "+918534995127";
   const BUSINESS_NAME = "Usman Septic Tank";
-  const OWNER_NAME = "ABC";
+  const OWNER_NAME = "Usman Ansari";
 
   // Scroll observer
   useEffect(() => {
