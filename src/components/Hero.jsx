@@ -440,7 +440,7 @@ const Hero = () => {
               </div>
               <div className="text-center">
                 <div className="text-2xl font-extrabold bg-gradient-to-r from-amber-700 to-yellow-600 bg-clip-text text-transparent">
-                  Pan India
+                  All Over Uttarakhand
                 </div>
                 <div className="text-gray-600 text-xs font-medium mt-1">
                   Delivery

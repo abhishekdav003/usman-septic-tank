@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ashishfebtech-droid.github.io/usman-septic-tank",
+  "homepage": "https://abhishekdav003.github.io/usman-septic-tank",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
