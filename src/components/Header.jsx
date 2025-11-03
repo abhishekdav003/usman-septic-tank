@@ -68,21 +68,28 @@ const Header = () => {
   return (
     <>
       <header className="bg-white shadow-md fixed w-full top-0 z-50 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            {/* Logo */}
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16 sm:h-18 md:h-20">
+            {/* Logo Section - Fully Responsive */}
             <div 
-              className="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition-opacity"
+              className="flex items-center space-x-2 sm:space-x-3 cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0"
               onClick={() => navigateToPage('/')}
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-amber-700 to-amber-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">U</span>
+              {/* Logo Image */}
+              <div className="flex-shrink-0">
+                <img 
+                  src="/logo.jpg" 
+                  alt="Usman Septic Tanks Logo"
+                  className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+                />
               </div>
-              <div>
-                <h2 className="text-xl font-bold text-gray-900">
+
+              {/* Company Name and Tagline - Hidden on very small screens */}
+              <div className="hidden sm:block">
+                <h2 className="text-sm sm:text-base md:text-xl font-bold text-gray-900 leading-tight">
                   Usman Septic Tanks
                 </h2>
-                <p className="text-xs text-amber-600 font-medium">
+                <p className="text-xs text-amber-600 font-medium leading-tight">
                   Premium RCC Solutions
                 </p>
               </div>
@@ -131,10 +138,10 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors flex-shrink-0"
               onClick={() => setIsMenuOpen(true)}
             >
-              <FaBars className="text-gray-700 w-6 h-6" />
+              <FaBars className="text-gray-700 w-5 h-5 sm:w-6 sm:h-6" />
             </button>
           </div>
         </div>
@@ -150,81 +157,83 @@ const Header = () => {
           ></div>
 
           {/* Sidebar */}
-          <div className="fixed top-0 right-0 h-full w-80 bg-white z-50 lg:hidden shadow-2xl animate-slideIn overflow-y-auto">
-            <div className="p-6 h-full flex flex-col">
+          <div className="fixed top-0 right-0 h-full w-72 sm:w-80 bg-white z-50 lg:hidden shadow-2xl animate-slideIn overflow-y-auto">
+            <div className="p-4 sm:p-6 h-full flex flex-col">
               {/* Header */}
-              <div className="flex justify-between items-center mb-8 pb-6 border-b border-gray-200">
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-amber-700 to-amber-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">U</span>
-                  </div>
+              <div className="flex justify-between items-center mb-6 sm:mb-8 pb-4 sm:pb-6 border-b border-gray-200">
+                <div className="flex items-center space-x-2 sm:space-x-3">
+                  <img 
+                    src="/logo.jpg" 
+                    alt="Usman Septic Tanks Logo"
+                    className="h-10 sm:h-12 w-auto object-contain"
+                  />
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900">Menu</h3>
+                    <h3 className="text-base sm:text-lg font-bold text-gray-900">Menu</h3>
                     <p className="text-xs text-gray-500">Navigation</p>
                   </div>
                 </div>
                 <button
                   onClick={() => setIsMenuOpen(false)}
-                  className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                  className="p-2 hover:bg-gray-100 rounded-lg transition-colors flex-shrink-0"
                 >
                   <FaTimes className="text-gray-700 w-5 h-5" />
                 </button>
               </div>
 
               {/* Navigation */}
-              <nav className="space-y-2 mb-8">
+              <nav className="space-y-2 mb-6 sm:mb-8">
                 <button
                   onClick={() => navigateToPage('/')}
-                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all"
+                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all text-sm sm:text-base"
                 >
                   Home
                 </button>
                 <button
                   onClick={() => navigateToPage('/about')}
-                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all"
+                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all text-sm sm:text-base"
                 >
                   About Us
                 </button>
                 <button
                   onClick={() => navigateToPage('/tank-selection-guide')}
-                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all"
+                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all text-sm sm:text-base"
                 >
                   Tank Guide
                 </button>
                 <button
                   onClick={() => navigateToPage('/gallery')}
-                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all"
+                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all text-sm sm:text-base"
                 >
                   Gallery
                 </button>
                 <button
                   onClick={() => navigateToPage('/contact')}
-                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all"
+                  className="block w-full text-left text-gray-700 hover:text-amber-700 hover:bg-amber-50 font-medium py-3 px-4 rounded-lg transition-all text-sm sm:text-base"
                 >
                   Contact Us
                 </button>
               </nav>
 
               {/* Contact Info */}
-              <div className="space-y-3 mb-6 bg-amber-50 p-4 rounded-xl">
+              <div className="space-y-3 mb-4 sm:mb-6 bg-amber-50 p-3 sm:p-4 rounded-xl">
                 <a
                   href="tel:+919012901312"
                   className="flex items-center space-x-3 text-gray-700 hover:text-amber-700 transition-colors"
                 >
-                  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
-                    <FaPhone className="text-amber-600 w-6 h-6" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
+                    <FaPhone className="text-amber-600 w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-xs text-gray-500">Call Us</p>
-                    <span className="font-medium text-sm truncate">+91 90129 01312</span>
+                    <span className="font-medium text-xs sm:text-sm truncate">+91 90129 01312</span>
                   </div>
                 </a>
                 <a
                   href="mailto:usmanseptiktankuk17@gmail.com"
                   className="flex items-center space-x-3 text-gray-700 hover:text-amber-700 transition-colors"
                 >
-                  <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
-                    <FaEnvelope className="text-amber-600 w-6 h-6" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
+                    <FaEnvelope className="text-amber-600 w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-xs text-gray-500">Email Us</p>
@@ -236,7 +245,7 @@ const Header = () => {
               </div>
 
               {/* Social Links */}
-              <div className="mb-6">
+              <div className="mb-4 sm:mb-6">
                 <p className="text-xs text-gray-500 mb-3 font-medium">
                   FOLLOW US
                 </p>
@@ -246,7 +255,7 @@ const Header = () => {
                       key={index}
                       href={social.url}
                       title={social.label}
-                      className="w-11 h-11 bg-gradient-to-br from-amber-100 to-amber-200 hover:from-amber-600 hover:to-amber-700 rounded-xl flex items-center justify-center transition-all hover:scale-110 text-amber-700 hover:text-white shadow-sm"
+                      className="w-10 h-10 sm:w-11 sm:h-11 bg-gradient-to-br from-amber-100 to-amber-200 hover:from-amber-600 hover:to-amber-700 rounded-xl flex items-center justify-center transition-all hover:scale-110 text-amber-700 hover:text-white shadow-sm"
                     >
                       {social.icon}
                     </a>
@@ -257,7 +266,7 @@ const Header = () => {
               {/* Quick Enquiry Button */}
               <button
                 onClick={navigateToContactForm}
-                className="w-full bg-gradient-to-r from-amber-700 to-amber-600 text-white py-3.5 rounded-xl font-semibold mt-auto shadow-lg hover:shadow-xl hover:from-amber-800 hover:to-amber-700 transition-all"
+                className="w-full bg-gradient-to-r from-amber-700 to-amber-600 text-white py-3 sm:py-3.5 rounded-xl font-semibold mt-auto shadow-lg hover:shadow-xl hover:from-amber-800 hover:to-amber-700 transition-all text-sm sm:text-base"
               >
                 Get Free Quote
               </button>
