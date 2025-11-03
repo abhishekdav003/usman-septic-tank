@@ -8,7 +8,7 @@ const Gallery = () => {
   const [visibleElements, setVisibleElements] = useState({});
 
   // Configuration
-  const CONTACT_NUMBER = "+919012901312";
+  const CONTACT_NUMBER = "+918534976439";
   const BUSINESS_NAME = "Usman Septic Tank";
   const OWNER_NAME = "Usman Ansari";
 
