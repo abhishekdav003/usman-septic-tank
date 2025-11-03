@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaArrowRight } from 'react-icons/fa';
 
+
 const Footer = () => {
   const navigateToPage = (path) => {
     window.location.href = `/#${path}`;
