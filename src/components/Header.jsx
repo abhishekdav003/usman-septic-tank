@@ -68,11 +68,11 @@ const Header = () => {
   return (
     <>
       <header className="bg-white shadow-md fixed w-full top-0 z-50 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 sm:h-18 md:h-20">
+        <div className="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16 sm:h-18 md:h-20 gap-2 sm:gap-4">
             {/* Logo Section - Fully Responsive */}
             <div 
-              className="flex items-center space-x-2 sm:space-x-3 cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0"
+              className="flex items-center gap-1.5 sm:gap-2 md:gap-3 cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0 min-w-0"
               onClick={() => navigateToPage('/')}
             >
               {/* Logo Image - FIXED PATH */}
@@ -80,23 +80,23 @@ const Header = () => {
                 <img 
                   src={`${import.meta.env.BASE_URL}logo.jpg`}
                   alt="Usman Septic Tanks Logo"
-                  className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+                  className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain"
                 />
               </div>
 
-              {/* Company Name and Tagline - Hidden on very small screens */}
-              <div className="hidden sm:block">
-                <h2 className="text-sm sm:text-base md:text-xl font-bold text-gray-900 leading-tight">
+              {/* Company Name and Tagline - Now visible on all screens */}
+              <div className="min-w-0 flex-shrink">
+                <h2 className="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-gray-900 leading-tight truncate">
                   Usman Septic Tanks
                 </h2>
-                <p className="text-xs text-amber-600 font-medium leading-tight">
+                <p className="text-[10px] sm:text-xs md:text-sm text-amber-600 font-medium leading-tight truncate">
                   Premium RCC Solutions
                 </p>
               </div>
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-1 items-center">
+            <nav className="hidden lg:flex space-x-1 items-center flex-shrink-0">
               <button
                 onClick={() => navigateToPage('/')}
                 className="text-gray-700 hover:text-amber-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition-all"
