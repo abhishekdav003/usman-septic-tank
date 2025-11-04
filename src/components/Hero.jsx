@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Shield,
   Zap,
@@ -16,6 +17,7 @@ import {
 } from "lucide-react";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [imageError, setImageError] = useState({});
   const [isVisible, setIsVisible] = useState(false);
@@ -307,11 +309,11 @@ const Hero = () => {
               ))}
             </div>
 
-            {/* CTA Buttons - Updated with 3 buttons */}
+            {/* CTA Buttons - Updated with proper navigation */}
             <div className="flex flex-col sm:flex-row gap-3">
               {/* About Us Button */}
               <button
-                onClick={() => (window.location.href = "/#/about")}
+                onClick={() => navigate("/about")}
                 className="group bg-gradient-to-r from-amber-700 to-amber-600 text-white px-6 py-3 rounded-xl hover:from-amber-800 hover:to-amber-700 transition-all duration-300 font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 <Info className="w-4 h-4" />
@@ -321,7 +323,7 @@ const Hero = () => {
 
               {/* Contact Us Button */}
               <button
-                onClick={() => (window.location.href = "/#/contact")}
+                onClick={() => navigate("/contact")}
                 className="group border-2 border-amber-700 text-amber-700 px-6 py-3 rounded-xl hover:bg-amber-700 hover:text-white transition-all duration-300 font-semibold flex items-center justify-center space-x-2 shadow-md hover:shadow-lg hover:scale-105"
               >
                 <MessageCircle className="w-4 h-4" />
@@ -330,9 +332,7 @@ const Hero = () => {
 
               {/* Tank Sizes Button */}
               <button
-                onClick={() =>
-                  (window.location.href = "/#/tank-selection-guide")
-                }
+                onClick={() => navigate("/tank-selection-guide")}
                 className="group bg-gradient-to-r from-yellow-600 to-orange-600 text-white px-6 py-3 rounded-xl hover:from-yellow-700 hover:to-orange-700 transition-all duration-300 font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 <Ruler className="w-4 h-4" />
