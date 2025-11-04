@@ -163,7 +163,7 @@ const Header = () => {
               <div className="flex justify-between items-center mb-6 sm:mb-8 pb-4 sm:pb-6 border-b border-gray-200">
                 <div className="flex items-center space-x-2 sm:space-x-3">
                   <img 
-                    src="/logo.jpg"
+                    src={`${import.meta.env.BASE_URL}logo.jpg`}
                     alt="Usman Septic Tanks Logo"
                     className="h-10 sm:h-12 w-auto object-contain"
                   />
