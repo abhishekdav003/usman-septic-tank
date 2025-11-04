@@ -345,7 +345,7 @@ const Hero = () => {
               <div className="grid grid-cols-4 gap-2">
                 {/* Call Now */}
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918534976439"
                   className="flex flex-col items-center justify-center p-2 rounded-xl hover:bg-blue-50 transition-all group"
                 >
                   <div className="w-11 h-11 bg-blue-100 rounded-full flex items-center justify-center mb-1.5 group-hover:bg-blue-500 transition-all group-hover:scale-110">
@@ -358,7 +358,7 @@ const Hero = () => {
 
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/918534976439"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center justify-center p-2 rounded-xl hover:bg-green-50 transition-all group"
