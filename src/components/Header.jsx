@@ -50,7 +50,7 @@ const Header = () => {
   const socialLinks = [
     {
       icon: <FaWhatsapp className="text-lg" />,
-      url: "https://wa.me/919012901312",
+      url: "https://wa.me/918534976439",
       label: "WhatsApp",
     },
     {
@@ -217,7 +217,7 @@ const Header = () => {
               {/* Contact Info */}
               <div className="space-y-3 mb-4 sm:mb-6 bg-amber-50 p-3 sm:p-4 rounded-xl">
                 <a
-                  href="tel:+919012901312"
+                  href="tel:+918534976439"
                   className="flex items-center space-x-3 text-gray-700 hover:text-amber-700 transition-colors"
                 >
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
@@ -225,7 +225,7 @@ const Header = () => {
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-xs text-gray-500">Call Us</p>
-                    <span className="font-medium text-xs sm:text-sm truncate">+91 90129 01312</span>
+                    <span className="font-medium text-xs sm:text-sm truncate">+91 8534976439</span>
                   </div>
                 </a>
                 <a

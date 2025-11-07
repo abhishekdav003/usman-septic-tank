@@ -46,7 +46,7 @@ const Footer = () => {
     {
       icon: <FaWhatsapp className="text-lg" />,
       name: "WhatsApp",
-      url: "https://wa.me/919012901312",
+      url: "https://wa.me/918534976439",
       color: "hover:bg-green-600"
     }
   ];

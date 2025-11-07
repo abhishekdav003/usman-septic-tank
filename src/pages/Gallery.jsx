@@ -57,28 +57,28 @@ const Gallery = () => {
     { id: "img-8", src: "/usman-septic-tank/images/8.jpg", title: "Project 8 - RCC Septic Tank 4x5", category: "custom", type: "image", size: "4 x 5 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-9", src: "/usman-septic-tank/images/9.jpg", title: "Project 9 - RCC Septic Tank 5x3", category: "commercial", type: "image", size: "5 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-10", src: "/usman-septic-tank/images/10.jpg", title: "Project 10 - RCC Septic Tank 8x2.50", category: "residential", type: "image", size: "8 x 2.50 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
-    // { id: "img-11", src: "/usman-septic-tank/images/11.jpg", title: "Project 11 - RCC Septic Tank 6x10", category: "industrial", type: "image", size: "6 x 10 ft",  capacity: "150000L approx", material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
-    { id: "img-12", src: "/usman-septic-tank/images/12.jpg", title: "Project 12 - RCC Septic Tank 4X4", category: "custom", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-11", src: "/usman-septic-tank/images/new.jpeg", title: "Project 11 - RCC Septic Tank Soak Pit 3x8", category: "industrial", type: "image", size: "3 x 8 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    // { id: "img-12", src: "/usman-septic-tank/images/12.jpg", title: "Project 12 - RCC Septic Tank 4X4", category: "custom", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-13", src: "/usman-septic-tank/images/13.jpg", title: "Project 13 - RCC Septic Tank 8x3", category: "commercial", type: "image", size: "8 x 3 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-14", src: "/usman-septic-tank/images/14.jpg", title: "Project 14 - RCC Septic Tank 4x3", category: "industrial", type: "image", size: "4 x 13 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-15", src: "/usman-septic-tank/images/15.jpg", title: "Project 15 - RCC Septic Tank 3.25X8", category: "custom", type: "image", size: "3.25 X 8 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
-    { id: "img-16", src: "/usman-septic-tank/images/16.jpg", title: "Project 16 - RCC Septic Tank 4x4", category: "custom", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-16", src: "/usman-septic-tank/images/16.jpg", title: "Project 16 - RCC Septic Tank 8X2.5", category: "custom", type: "image", size: "8 x 2.5 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-17", src: "/usman-septic-tank/images/17.jpg", title: "Project 17 - RCC Septic Tank 8X3", category: "residential", type: "image", size: "8 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
-    { id: "img-18", src: "/usman-septic-tank/images/18.jpg", title: "Project 18 - RCC Septic Tank 4x5", category: "residential", type: "image", size: "4 x 5 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-18", src: "/usman-septic-tank/images/18.jpg", title: "Project 18 - RCC Septic Tank 5x2.75", category: "residential", type: "image", size: "5 x 2.75 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-19", src: "/usman-septic-tank/images/19.jpg", title: "Project 19 - RCC Septic Tank 4x2.50", category: "industrial", type: "image", size: "4 x 2.50 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-20", src: "/usman-septic-tank/images/20.jpg", title: "Project 20 - RCC Septic Tank 8X2.50", category: "custom", type: "image", size: "8 x 2.50 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
-    { id: "img-21", src: "/usman-septic-tank/images/21.jpg", title: "Project 21 - RCC Septic Tank 4x4", category: "residential", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    // { id: "img-21", src: "/usman-septic-tank/images/21.jpg", title: "Project 21 - RCC Septic Tank 4x4", category: "residential", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-22", src: "/usman-septic-tank/images/22.jpg", title: "Project 22 - RCC Septic Tank 8x3", category: "commercial", type: "image", size: "8 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     // { id: "img-23", src: "/usman-septic-tank/images/23.jpg", title: "Project 23 - RCC Septic Tank 4x5", category: "industrial", type: "image", size: "4 x 5 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-24", src: "/usman-septic-tank/images/24.jpg", title: "Project 24 - RCC Septic Tank CONTACT NOW", category: "custom", type: "image",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
     { id: "img-25", src: "/usman-septic-tank/images/25.jpg", title: "Project 25 - RCC Septic Tank 8x3", category: "industrial", type: "image", size: "8 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
-    { id: "img-26", src: "/usman-septic-tank/images/26.jpg", title: "Project 26 - RCC Septic Tank 4x5", category: "custom", type: "image", size: "4 x 5 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" }
+    // { id: "img-26", src: "/usman-septic-tank/images/26.jpg", title: "Project 26 - RCC Septic Tank 4x5", category: "custom", type: "image", size: "4 x 5 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" }
   ];
 
   // Hardcoded video files
   const videoFiles = [
     { id: "vid-1", src: "/usman-septic-tank/videos/video1.mp4", thumbnail: "/usman-septic-tank/images/1.jpg", title: "Installation Video 1", category: "residential", type: "video" },
-    { id: "vid-2", src: "/usman-septic-tank/videos/video2.mp4", thumbnail: "/usman-septic-tank/images/2.jpg", title: "Installation Video 2", category: "commercial", type: "video" },
+    // { id: "vid-2", src: "/usman-septic-tank/videos/video2.mp4", thumbnail: "/usman-septic-tank/images/2.jpg", title: "Installation Video 2", category: "commercial", type: "video" },
     { id: "vid-3", src: "/usman-septic-tank/videos/video3.mp4", thumbnail: "/usman-septic-tank/images/3.jpg", title: "Installation Video 3", category: "industrial", type: "video" },
     { id: "vid-4", src: "/usman-septic-tank/videos/video4.mp4", thumbnail: "/usman-septic-tank/images/4.jpg", title: "Installation Video 4", category: "custom", type: "video" },
     { id: "vid-5", src: "/usman-septic-tank/videos/video5.mp4", thumbnail: "/usman-septic-tank/images/5.jpg", title: "Installation Video 5", category: "residential", type: "video" },
@@ -269,22 +269,21 @@ const Gallery = () => {
                     }}
                   />
                 ) : (
-                  <div className="relative w-full h-full">
-                    <img
-                      src={media.thumbnail || "/usman-septic-tank/images/1.jpg"}
-                      alt={media.title}
-                      className="w-full h-full object-cover transition-transform duration-300"
-                      onError={(e) => {
-                        e.target.src = "/usman-septic-tank/images/1.jpg";
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                      <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center transition-transform">
-                        <FaPlay className="text-white text-xl ml-1" />
-                      </div>
-                    </div>
-                  </div>
-                )}
+  <div className="relative w-full h-full">
+    <video
+      src={media.src}
+      className="w-full h-full object-cover transition-transform duration-300"
+      preload="metadata"
+      muted
+      playsInline
+    />
+    <div className="absolute inset-0  bg-opacity-30 flex items-center justify-center">
+      <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center transition-transform group-hover:scale-110">
+        <FaPlay className="text-white text-xl ml-1" />
+      </div>
+    </div>
+  </div>
+)}
 
                 {/* Media Type Badge */}
                 <div className="absolute top-3 left-3">

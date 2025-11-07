@@ -122,8 +122,8 @@ const ContactPage = () => {
     {
       icon: <FaPhone className="text-3xl" />,
       title: "Call Us",
-      info: "+91 90129 01312",
-      link: "tel:+919012901312",
+      info: "+91 8534976439",
+      link: "tel:+918534976439",
       description: "Mon-Sun: 8AM - 8PM",
       color: "from-green-500 to-green-600",
       badge: "24/7 Available"
@@ -131,8 +131,8 @@ const ContactPage = () => {
     {
       icon: <FaWhatsapp className="text-3xl" />,
       title: "WhatsApp", 
-      info: "+91 90129 01312",
-      link: "https://wa.me/919012901312",
+      info: "+91 8534976439",
+      link: "https://wa.me/918534976439",
       description: "Quick response guaranteed",
       color: "from-green-400 to-green-500",
       badge: "Instant Reply"
@@ -447,7 +447,7 @@ const ContactPage = () => {
                   </p>
                   <p className="flex items-center">
                     <FaPhone className="text-amber-600 mr-3 text-xl flex-shrink-0" />
-                    <span><span className="font-semibold">Phone:</span> +91 90129 01312</span>
+                    <span><span className="font-semibold">Phone:</span> +91 8534976439</span>
                   </p>
                   <p className="flex items-center">
                     <FaClock className="text-amber-600 mr-3 text-xl flex-shrink-0" />

@@ -8,7 +8,7 @@ const HowItWorks = () => {
       icon: <FaPhone className="text-2xl" />,
       title: "कॉल करें",
       description: "हमें कॉल करें या फॉर्म भरें",
-      details: "90129 01312 पर कॉल करें"
+      details: "8534976439 पर कॉल करें"
     },
     {
       step: "2", 
@@ -114,11 +114,11 @@ const HowItWorks = () => {
           <h3 className="text-2xl font-bold mb-4">अभी कॉल करें और पाएं मुफ्त सलाह</h3>
           <div className="text-3xl font-bold mb-4">
             <FaPhone className="inline mr-3" />
-            90129 01312
+            8534976439
           </div>
           <p className="text-brown-200 mb-6">24x7 - कोई भी समय कॉल कर सकते हैं</p>
           <a 
-            href="tel:+919012901312"
+            href="tel:+918534976439"
             className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 font-semibold text-lg"
           >
             अभी कॉल करें

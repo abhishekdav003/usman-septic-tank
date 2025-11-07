@@ -385,14 +385,14 @@ const AboutPage = () => {
                 Get Free Quote
               </Link>
               <a 
-                href="tel:+919012901312" 
+                href="tel:+9185349764392" 
                 className="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-amber-700 transition-all duration-300"
               >
                 <FaPhone className="mr-2" />
                 Call Now
               </a>
               <a 
-                href="https://wa.me/919012901312" 
+                href="https://wa.me/918534976439" 
                 className="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-amber-700 transition-all duration-300"
               >
                 <FaWhatsapp className="mr-2" />

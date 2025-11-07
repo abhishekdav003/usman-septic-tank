@@ -363,9 +363,9 @@ const TankSelectionGuide = () => {
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">अभी भी कन्फ्यूज हैं कौनसा साइज लें?</h3>
             <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">हमारे एक्सपर्ट से बात करें - मुफ्त सलाह पाएं और सही साइज चुनें</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919012901312" className="group inline-flex items-center justify-center bg-white text-amber-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl hover:scale-105">
+              <a href="tel:+918534976439" className="group inline-flex items-center justify-center bg-white text-amber-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl hover:scale-105">
                 <FaPhone className="mr-3 group-hover:rotate-12 transition-transform" />
-                Call: 90129 01312
+                Call: 8534976439
               </a>
               <button 
                 onClick={handleGetQuote}

@@ -82,16 +82,16 @@ const Contact = () => {
     {
       icon: <FaPhone className="text-2xl" />,
       title: "Call Us",
-      info: "+91 90129 01312",
-      link: "tel:+919012901312",
+      info: "+91 8534976439",
+      link: "tel:+918534976439",
       description: "Mon-Sun: 8AM - 8PM",
       color: "from-green-500 to-green-600"
     },
     {
       icon: <FaWhatsapp className="text-2xl" />,
       title: "WhatsApp", 
-      info: "+91 90129 01312",
-      link: "https://wa.me/919012901312",
+      info: "+91 8534976439",
+      link: "https://wa.me/918534976439",
       description: "Quick response guaranteed",
       color: "from-green-400 to-green-500"
     },
