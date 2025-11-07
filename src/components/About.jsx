@@ -225,6 +225,44 @@ const About = () => {
                   Every tank we build undergoes rigorous quality checks and is backed by comprehensive 
                   warranty, ensuring peace of mind for years to come.
                 </p>
+                
+              </div>
+
+              <div className={`mt-6 p-4 bg-amber-50 rounded-2xl border border-amber-200 transition-all duration-700 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+              }`} style={{ transitionDelay: '500ms' }}>
+                
+                <p className="text-amber-700 text-sm">
+                  > “Har mazboot imarat ke neeche chhupi hoti hai ek buniyaad —
+aur us buniyaad ka sabse zaroori hissa hota hai septic tank.
+
+Usman Septic Tank me hum samajhte hain,
+ki sirf tank banana kaam nahi hota —
+har project me perfection dena hamara farz hota hai.
+
+Hum banate hain high-quality septic tanks,
+jisme milti hai strong durability, leak-proof design,
+aur perfect finishing — taaki aapka system chale saalon tak bina dikkat ke.
+
+Har tank me hum use karte hain behtareen material,
+expert team ke supervision me har ek step hota hai carefully checked.
+
+Hamari lettering service se milta hai accurate marking,
+jisse fitting aur installation dono me milti hai asaani.
+
+Chahe aapka project chhota ho ya bada,
+hum dete hain har customer ko ek hi cheez —
+quality, time, aur bharosa.
+
+Usman Septic Tank —
+jahaan kaam hota hai imandari se, aur naam banta hai quality se.
+
+Aaj hi sampark kijiye,
+aur paaiye apne project ke liye ek durable aur trusted solution.
+
+Usman Septic Tank — mazbooti ka naya naam.”
+abhi call kare 8534976439
+                </p>
               </div>
               
               <div className={`mt-6 p-4 bg-amber-50 rounded-2xl border border-amber-200 transition-all duration-700 ${

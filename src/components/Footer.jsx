@@ -54,13 +54,13 @@ const Footer = () => {
   const contactInfo = [
     {
       icon: <FaPhone className="text-xl" />,
-      text: "+91 90129 01312",
-      link: "tel:+919012901312"
+      text: "+91 8534976439",
+      link: "tel:+918534976439"
     },
     {
       icon: <FaWhatsapp className="text-xl" />,
-      text: "+91 90129 01312",
-      link: "https://wa.me/919012901312"
+      text: "+91 8534976439",
+      link: "https://wa.me/918534976439"
     },
     {
       icon: <FaEnvelope className="text-xl" />,

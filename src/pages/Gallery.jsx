@@ -44,60 +44,53 @@ const Gallery = () => {
 
   const isElementVisible = (elementId) => visibleElements[elementId] || false;
 
-  const productData = [
-    { width: 4, depth: 4, price: 15000, category: "residential" },
-    { width: 4, depth: 6, price: 18000, category: "residential" },
-    { width: 4, depth: 8, price: 22000, category: "commercial" },
-    { width: 5, depth: 5, price: 20000, category: "residential" },
-    { width: 5, depth: 8, price: 28000, category: "industrial" },
-    { width: 6, depth: 6, price: 25000, category: "commercial" },
-    { width: 6, depth: 8, price: 32000, category: "industrial" },
-    { width: 8, depth: 8, price: 40000, category: "custom" },
-    { width: 4, depth: 4, price: 15500, category: "commercial" },
-    { width: 5, depth: 6, price: 24000, category: "residential" },
-    { width: 6, depth: 10, price: 38000, category: "industrial" },
-    { width: 8, depth: 6, price: 36000, category: "custom" },
-    { width: 4, depth: 10, price: 26000, category: "commercial" },
-    { width: 5, depth: 10, price: 34000, category: "industrial" },
-    { width: 7, depth: 7, price: 30000, category: "custom" },
-    { width: 8, depth: 10, price: 45000, category: "custom" },
-    { width: 4, depth: 5, price: 17000, category: "residential" },
-    { width: 6, depth: 4, price: 23000, category: "residential" },
-    { width: 7, depth: 8, price: 35000, category: "industrial" },
-    { width: 10, depth: 10, price: 55000, category: "custom" },
-    { width: 5, depth: 4, price: 18500, category: "residential" },
-    { width: 6, depth: 5, price: 24000, category: "commercial" },
-    { width: 7, depth: 6, price: 28000, category: "industrial" },
-    { width: 8, depth: 12, price: 50000, category: "custom" },
-    { width: 4, depth: 12, price: 30000, category: "industrial" },
-    { width: 9, depth: 9, price: 42000, category: "custom" },
+  // Hardcoded image files with all data
+  const imageFiles = [
+        { id: "img-6", src: "/usman-septic-tank/images/6.jpg", title: "Project 6 - RCC Septic Tank 3X8", category: "commercial", type: "image", size: "3 X 8 ft", price: 15000, capacity: "1600L approx", material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+
+    { id: "img-1", src: "/usman-septic-tank/images/1.jpg", title: "Project 1 - RCC Septic Tank 4x4", category: "residential", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-2", src: "/usman-septic-tank/images/2.jpg", title: "Project 2 - RCC Septic Tank 4x2.50", category: "residential", type: "image", size: "4 X 2.50 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-3", src: "/usman-septic-tank/images/3.jpg", title: "Project 3 - RCC Septic Tank 8X3", category: "commercial", type: "image", size: "8 X 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-4", src: "/usman-septic-tank/images/4.jpg", title: "Project 4 - RCC Septic Tank 4X3", category: "residential", type: "image", size: "54 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-5", src: "/usman-septic-tank/images/5.jpg", title: "Project 5 - RCC Septic Tank 4x4", category: "industrial", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-7", src: "/usman-septic-tank/images/7.jpg", title: "Project 7 - RCC Septic Tank 8x3", category: "industrial", type: "image", size: "8 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-8", src: "/usman-septic-tank/images/8.jpg", title: "Project 8 - RCC Septic Tank 4x5", category: "custom", type: "image", size: "4 x 5 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-9", src: "/usman-septic-tank/images/9.jpg", title: "Project 9 - RCC Septic Tank 5x3", category: "commercial", type: "image", size: "5 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-10", src: "/usman-septic-tank/images/10.jpg", title: "Project 10 - RCC Septic Tank 8x2.50", category: "residential", type: "image", size: "8 x 2.50 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    // { id: "img-11", src: "/usman-septic-tank/images/11.jpg", title: "Project 11 - RCC Septic Tank 6x10", category: "industrial", type: "image", size: "6 x 10 ft",  capacity: "150000L approx", material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-12", src: "/usman-septic-tank/images/12.jpg", title: "Project 12 - RCC Septic Tank 4X4", category: "custom", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-13", src: "/usman-septic-tank/images/13.jpg", title: "Project 13 - RCC Septic Tank 8x3", category: "commercial", type: "image", size: "8 x 3 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-14", src: "/usman-septic-tank/images/14.jpg", title: "Project 14 - RCC Septic Tank 4x3", category: "industrial", type: "image", size: "4 x 13 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-15", src: "/usman-septic-tank/images/15.jpg", title: "Project 15 - RCC Septic Tank 3.25X8", category: "custom", type: "image", size: "3.25 X 8 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-16", src: "/usman-septic-tank/images/16.jpg", title: "Project 16 - RCC Septic Tank 4x4", category: "custom", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-17", src: "/usman-septic-tank/images/17.jpg", title: "Project 17 - RCC Septic Tank 8X3", category: "residential", type: "image", size: "8 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-18", src: "/usman-septic-tank/images/18.jpg", title: "Project 18 - RCC Septic Tank 4x5", category: "residential", type: "image", size: "4 x 5 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-19", src: "/usman-septic-tank/images/19.jpg", title: "Project 19 - RCC Septic Tank 4x2.50", category: "industrial", type: "image", size: "4 x 2.50 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-20", src: "/usman-septic-tank/images/20.jpg", title: "Project 20 - RCC Septic Tank 8X2.50", category: "custom", type: "image", size: "8 x 2.50 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-21", src: "/usman-septic-tank/images/21.jpg", title: "Project 21 - RCC Septic Tank 4x4", category: "residential", type: "image", size: "4 x 4 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-22", src: "/usman-septic-tank/images/22.jpg", title: "Project 22 - RCC Septic Tank 8x3", category: "commercial", type: "image", size: "8 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    // { id: "img-23", src: "/usman-septic-tank/images/23.jpg", title: "Project 23 - RCC Septic Tank 4x5", category: "industrial", type: "image", size: "4 x 5 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-24", src: "/usman-septic-tank/images/24.jpg", title: "Project 24 - RCC Septic Tank CONTACT NOW", category: "custom", type: "image",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-25", src: "/usman-septic-tank/images/25.jpg", title: "Project 25 - RCC Septic Tank 8x3", category: "industrial", type: "image", size: "8 x 3 ft",   material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" },
+    { id: "img-26", src: "/usman-septic-tank/images/26.jpg", title: "Project 26 - RCC Septic Tank 4x5", category: "custom", type: "image", size: "4 x 5 ft",  material: "RCC (Reinforced Cement Concrete)", warranty: "5 Years", installation: "Professional Team Available" }
   ];
 
-  const imageFiles = productData.map((product, i) => ({
-    id: `img-${i + 1}`,
-    src: `/usman-septic-tank/images/${(i % 26) + 1}.jpg`,
-    title: `Project ${i + 1} - RCC Septic Tank ${product.width}x${product.depth}`,
-    category: product.category,
-    type: "image",
-    size: `${product.width} x ${product.depth} ft`,
-    dimensions: { width: product.width, depth: product.depth },
-    price: product.price,
-    specs: {
-      material: "RCC (Reinforced Cement Concrete)",
-      warranty: "5 Years",
-      installation: "Professional Team Available",
-      capacity: `${product.width * product.depth * 2500}L approx`
-    }
-  }));
-
-  const videoFiles = Array.from({ length: 13 }, (_, i) => ({
-    id: `vid-${i + 1}`,
-    src: `/usman-septic-tank/videos/video${i + 1}.mp4`,
-    thumbnail: `/usman-septic-tank/images/${(i % 26) + 1}.jpg`,
-    title: `Installation Video ${i + 1}`,
-    category: ["residential", "commercial", "industrial", "custom"][i % 4],
-    type: "video",
-  }));
+  // Hardcoded video files
+  const videoFiles = [
+    { id: "vid-1", src: "/usman-septic-tank/videos/video1.mp4", thumbnail: "/usman-septic-tank/images/1.jpg", title: "Installation Video 1", category: "residential", type: "video" },
+    { id: "vid-2", src: "/usman-septic-tank/videos/video2.mp4", thumbnail: "/usman-septic-tank/images/2.jpg", title: "Installation Video 2", category: "commercial", type: "video" },
+    { id: "vid-3", src: "/usman-septic-tank/videos/video3.mp4", thumbnail: "/usman-septic-tank/images/3.jpg", title: "Installation Video 3", category: "industrial", type: "video" },
+    { id: "vid-4", src: "/usman-septic-tank/videos/video4.mp4", thumbnail: "/usman-septic-tank/images/4.jpg", title: "Installation Video 4", category: "custom", type: "video" },
+    { id: "vid-5", src: "/usman-septic-tank/videos/video5.mp4", thumbnail: "/usman-septic-tank/images/5.jpg", title: "Installation Video 5", category: "residential", type: "video" },
+    { id: "vid-6", src: "/usman-septic-tank/videos/video6.mp4", thumbnail: "/usman-septic-tank/images/6.jpg", title: "Installation Video 6", category: "commercial", type: "video" },
+    { id: "vid-7", src: "/usman-septic-tank/videos/video7.mp4", thumbnail: "/usman-septic-tank/images/7.jpg", title: "Installation Video 7", category: "industrial", type: "video" },
+    { id: "vid-8", src: "/usman-septic-tank/videos/video8.mp4", thumbnail: "/usman-septic-tank/images/8.jpg", title: "Installation Video 8", category: "custom", type: "video" },
+    { id: "vid-9", src: "/usman-septic-tank/videos/video9.mp4", thumbnail: "/usman-septic-tank/images/9.jpg", title: "Installation Video 9", category: "residential", type: "video" },
+    { id: "vid-10", src: "/usman-septic-tank/videos/video10.mp4", thumbnail: "/usman-septic-tank/images/10.jpg", title: "Installation Video 10", category: "commercial", type: "video" },
+    { id: "vid-11", src: "/usman-septic-tank/videos/video11.mp4", thumbnail: "/usman-septic-tank/images/11.jpg", title: "Installation Video 11", category: "industrial", type: "video" },
+    { id: "vid-12", src: "/usman-septic-tank/videos/video12.mp4", thumbnail: "/usman-septic-tank/images/12.jpg", title: "Installation Video 12", category: "custom", type: "video" },
+    { id: "vid-13", src: "/usman-septic-tank/videos/video13.mp4", thumbnail: "/usman-septic-tank/images/13.jpg", title: "Installation Video 13", category: "residential", type: "video" }
+  ];
 
   const allMedia = mediaType === "all" ? [...imageFiles, ...videoFiles] : mediaType === "image" ? imageFiles : videoFiles;
 
@@ -235,12 +228,12 @@ const Gallery = () => {
         <div className="text-center mb-8">
           <div className="inline-flex flex-wrap items-center space-x-6 bg-white rounded-2xl px-6 py-4 shadow-lg border border-amber-200">
             <div className="text-center">
-              <div className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">{imageFiles.length}</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">26</div>
               <div className="text-gray-600 text-sm font-medium">Products</div>
             </div>
             <div className="w-px h-10 bg-amber-200 hidden sm:block"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">{videoFiles.length}</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">13</div>
               <div className="text-gray-600 text-sm font-medium">Installation Videos</div>
             </div>
             <div className="w-px h-10 bg-amber-200 hidden sm:block"></div>
@@ -329,10 +322,10 @@ const Gallery = () => {
                       <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-bold">{media.size} ft</span>
                     </div>
                     <div className="text-xs text-gray-600">
-                      <span className="font-semibold">Capacity:</span> {media.specs.capacity}
+                      <span className="font-semibold">Capacity:</span> {media.capacity}
                     </div>
                     <div className="text-xs text-gray-600">
-                      <span className="font-semibold">Material:</span> {media.specs.material}
+                      <span className="font-semibold">Material:</span> {media.material}
                     </div>
                   </div>
                 )}
@@ -437,8 +430,8 @@ const Gallery = () => {
                     <h2 className="text-lg font-bold text-gray-900 mb-2">{selectedMedia.title}</h2>
                     <p className="text-2xl font-bold text-green-600 mb-3">{formatPrice(selectedMedia.price)}</p>
                     <p className="text-gray-600 text-sm mb-2"><span className="font-semibold">Size:</span> {selectedMedia.size}</p>
-                    <p className="text-gray-600 text-sm mb-2"><span className="font-semibold">Capacity:</span> {selectedMedia.specs.capacity}</p>
-                    <p className="text-gray-600 text-sm mb-3"><span className="font-semibold">Warranty:</span> {selectedMedia.specs.warranty}</p>
+                    <p className="text-gray-600 text-sm mb-2"><span className="font-semibold">Capacity:</span> {selectedMedia.capacity}</p>
+                    <p className="text-gray-600 text-sm mb-3"><span className="font-semibold">Warranty:</span> {selectedMedia.warranty}</p>
                     <div className="flex gap-2">
                       <button
                         onClick={() => handleWhatsApp(selectedMedia.title)}
